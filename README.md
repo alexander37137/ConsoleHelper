@@ -41,10 +41,7 @@ class Program
 Library will find required command and execute it. 
 
 ```
-C:\ConsoleHelper\TestProject\bin\Debug>TestProject.exe hello
+C:\ConsoleHelper\TestProject\bin\Debug>TestProject.exe Hello
 Hello World!
 ```
-
-That's all!
-
 
