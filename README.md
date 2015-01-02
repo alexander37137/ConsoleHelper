@@ -1,17 +1,17 @@
 ConsoleHelper
 =============
 
-This is a simple library for handling arguments in console applications.
+This is a simple library for handling execution arguments in console applications.
 
-To start using it you can install package from nuget
+To start using it install package from nuget
 
 ```
 Install-Package Console.Helper 
 ```
 
-Then you should define some commands and register it 
+Then define some commands and register them
 
-Command class should implement interface IConsoleCommand and have Command attribute which contains key word for command
+Command class should implement interface IConsoleCommand and have Command attribute with command key word 
 
 ```csharp
     [Command("hello")]
@@ -24,7 +24,7 @@ Command class should implement interface IConsoleCommand and have Command attrib
     }
 ```
 
-After you register commands you can ask ConsoleHelper to process input args
+After you register your commands you can ask ConsoleHelper to process input arguments
 
 ```csharp
 class Program
@@ -39,3 +39,12 @@ class Program
 ```
 
 Library will find required command and execute it. 
+
+```
+C:\ConsoleHelper\TestProject\bin\Debug>TestProject.exe hello
+Hello World!
+```
+
+That's all!
+
+
